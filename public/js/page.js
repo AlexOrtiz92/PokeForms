@@ -5,7 +5,7 @@ const boton = document.getElementById("boton");
 
 const getPokemonPage = (page = 1) => {
   //metemos un valor predefinido si no se manda nada
-  const urlApi = `https://pokeapiaoo.herokuapp.com/api/pokemon/page/${page}`
+  const urlApi = `https://pokeapiaoo.herokuapp.com/api/pokemons/page/${page}`
 
 
   fetch(urlApi).then((response) => {
