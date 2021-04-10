@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>post</title>
+  <script src="js/post.js" defer></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="container  text-center">
+    <img
+      src="https://static.wikia.nocookie.net/espokemon/images/4/46/Pok%C3%A9mon_Gotta_catch_em_all_logo.png/revision/latest?cb=20130917005914"
+      alt="PokeApi" width="400" class="img-fluid">
+    <br>
+    <a href="getAll" class="text-success">Get All Pokemon</a>
+    <a href="post" class="text-primary">Add Pokemon</a>
+    <a href="delete" class="text-danger">Delete Pokemon</a>
+    <a href="page" class="text-info">Pagination</a>
+    <a href="put" class="text-warning">Put Pokemon</a>
+
+    <h1 class="text-center">Post de un Pokemon</h1>
+    <form action="http://127.0.0.1:5555/api/pokemon" method="post" autocomplete="on">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre Pokemon</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="type" class="form-label">Tipo</label>
+        <input type="text" class="form-control" id="type">
+      </div>
+
+      <button id="boton" type="button" class="btn btn-primary">Submit</button>
+
+      <!-- Se quita el type="submit" -->
+    </form>
+  </div>
+
+</body>
+
+</html>l
