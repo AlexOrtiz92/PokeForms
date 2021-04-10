@@ -13,6 +13,8 @@ app.use(express.static(__dirname + "/public/html", { extensions: ["html"] }))
 const port = "1234";
 const host = "127.0.0.1";
 
-app.listen(port, host, () => {
-  console.log(`Servidor corriendo en http://${host}:${port}`)
+const PORT = process.env.PORT || 1212;
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en puert ${PORT}`)
 })
